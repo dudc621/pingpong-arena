@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tournoi Ping Pong</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gradient-to-br from-indigo-900 via-blue-900 to-sky-700 text-white min-h-screen flex flex-col">
+  <header class="bg-white/10 py-4 text-center">
+    <a href="index.html" class="hover:text-sky-300 font-semibold">← Retour</a>
+  </header>
+
+  <main class="flex flex-col items-center justify-center flex-1 text-center p-4">
+    <h1 class="text-3xl font-bold mb-6">🏆 Tournoi Ping Pong</h1>
+    <p class="mb-6">Voici le tableau des matchs. Clique sur les cases pour mettre à jour les scores !</p>
+
+    <div id="bracket" class="grid grid-cols-2 gap-6">
+      <div class="bg-white/10 p-4 rounded-lg cursor-pointer" onclick="alert('Match Alice vs Bob')">Alice vs Bob</div>
+      <div class="bg-white/10 p-4 rounded-lg cursor-pointer" onclick="alert('Match Clara vs David')">Clara vs David</div>
+      <div class="bg-white/10 p-4 rounded-lg cursor-pointer" onclick="alert('Winner1 vs Winner2')">Winner1 vs Winner2</div>
+    </div>
+  </main>
+</body>
+</html>
