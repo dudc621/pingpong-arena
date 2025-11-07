@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculateur de points</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gradient-to-br from-slate-900 to-sky-700 text-white min-h-screen flex flex-col">
+  <header class="bg-white/10 py-4 text-center">
+    <a href="index.html" class="hover:text-sky-300 font-semibold">← Retour à l'accueil</a>
+  </header>
+
+  <main class="flex flex-col items-center justify-center flex-1 text-center">
+    <h1 class="text-3xl font-bold mb-6">Calculateur de Score</h1>
+
+    <div class="bg-white/10 p-6 rounded-2xl w-80">
+      <div class="flex justify-between mb-4">
+        <div>
+          <p>Joueur A</p>
+          <input type="number" id="scoreA" class="text-black w-16 text-center rounded-md">
+        </div>
+        <div>
+          <p>Joueur B</p>
+          <input type="number" id="scoreB" class="text-black w-16 text-center rounded-md">
+        </div>
+      </div>
+
+      <button onclick="calculateWinner()" class="bg-sky-500 hover:bg-sky-600 px-4 py-2 rounded-lg">Calculer</button>
+      <p id="result" class="mt-4 text-xl font-bold"></p>
+    </div>
+  </main>
+</body>
+</html>
